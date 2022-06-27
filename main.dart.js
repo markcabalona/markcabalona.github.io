@@ -4924,7 +4924,7 @@ ajY(a,b,c){var s,r,q
 if(b===c)return""
 if(!A.a94(B.d.X(a,b)))A.pt(a,b,"Scheme not starting with alphabetic character")
 for(s=b,r=!1;s<c;++s){q=B.d.X(a,s)
-if(!(q<128&&(B.kx[q>>>4]&1<<(q&15))!==0))A.pt(a,s,"Illegal scheme character")
+if(!(q<128&&(B.kw[q>>>4]&1<<(q&15))!==0))A.pt(a,s,"Illegal scheme character")
 if(65<=q&&q<=90)r=!0}a=B.d.V(a,b,c)
 return A.ajV(r?a.toLowerCase():a)},
 ajV(a){if(a==="http")return"http"
@@ -5028,7 +5028,7 @@ return B.b.ba(s,"/")},
 a93(a){var s,r,q=a.length
 if(q>=2&&A.a94(B.d.X(a,0)))for(s=1;s<q;++s){r=B.d.X(a,s)
 if(r===58)return B.d.V(a,0,s)+"%3A"+B.d.c9(a,s+1)
-if(r>127||(B.kx[r>>>4]&1<<(r&15))===0)break}return a},
+if(r>127||(B.kw[r>>>4]&1<<(r&15))===0)break}return a},
 ajX(a,b){var s,r,q
 for(s=0,r=0;r<2;++r){q=B.d.X(a,b+r)
 if(48<=q&&q<=57)s=s*16+q-48
@@ -49105,7 +49105,7 @@ s=B.h.ap(1e5*(s.gl(s)+8))
 return A.iT(A.b([B.yN,B.d7,o,new A.d7(new A.pQ(A.b([new A.uT(B.ab,"|",q,B.aN,p,new A.aB(s),new A.ip(q))],t.rr),!0,r),r),B.Fg],t.p),B.W,B.aJ)}}
 A.At.prototype={
 H(a,b){var s=null,r=A.a5(b)
-return A.dk(s,A.r9("images/me_at_wed.jpg",s,B.tH,s,s),B.V,s,B.tA,new A.d3(r.as.f,s,s,s,s,s,B.jn),300,s,s,300)}}
+return A.dk(s,A.r9("assets/images/me_at_wed.jpg",s,B.tH,s,s),B.V,s,B.tA,new A.d3(r.as.f,s,s,s,s,s,B.jn),300,s,s,300)}}
 A.ts.prototype={
 ai(){return new A.wi(B.m)}}
 A.wi.prototype={
@@ -49115,7 +49115,7 @@ A.cH(r.e,q)
 r.e=3
 s=A.a(3,q)>3?3:A.a(r.e,q)
 A.cW(0,s,3)
-s=A.eb(B.kw,0,s,t.tF).dg(0)
+s=A.eb(B.kx,0,s,t.tF).dg(0)
 A.cH(r.d,"visibleProjects")
 r.d=s},
 Pc(){this.ac(new A.a_s(this))},
@@ -49127,7 +49127,7 @@ A.a_s.prototype={
 $0(){var s="visibleProjects",r="projectsCount",q=this.a,p=J.bm(A.a(q.d,s)),o=A.a(q.d,s)
 q=A.a(q.e,r)-p>3?p+3:A.a(q.e,r)
 A.cW(p,q,3)
-J.acw(o,A.eb(B.kw,p,q,t.tF))},
+J.acw(o,A.eb(B.kx,p,q,t.tF))},
 $S:0}
 A.a_t.prototype={
 $1(a){return new A.cT(B.tD,new A.BO(a,null),null)},
@@ -51848,23 +51848,6 @@ B.zF=A.b(s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,245
 B.zL=A.b(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.zp)
 B.cM=A.b(s([0,0,65490,45055,65535,34815,65534,18431]),t.t)
 B.zN=A.b(s(["pointerdown","pointermove","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseup","keyup","keydown"]),t.s)
-B.qK=new A.l9("Web","icons/web.png")
-B.Aa=A.b(s([B.qK]),t.pN)
-B.d9=new A.eC("Flutter",0.7,"assets/icons/flutter.png","https://flutter.dev/")
-B.d8=new A.eC("Dart",0.7,"assets/icons/dart.png","https://dart.dev/")
-B.rt=new A.eC("Python",0.6,"assets/icons/python.png","https://www.python.org/")
-B.ru=new A.eC("FastAPI",0.5,"assets/icons/fastapi.png","https://fastapi.tiangolo.com/")
-B.Ax=A.b(s([B.d9,B.d8,B.rt,B.ru]),t.qv)
-B.Dq=new A.ic("FreedomWall","A simple web applicaton where anyone can post anything on the wall anonymously.","https://github.com/markcabalona/freedomwall","https://markcabalona.github.io/freedomwall-webapp","images/projects/freedomwall.png",B.Aa,B.Ax)
-B.qJ=new A.l9("Android","icons/android.png")
-B.zQ=A.b(s([B.qJ]),t.pN)
-B.zM=A.b(s([B.d9,B.d8]),t.qv)
-B.Dr=new A.ic("Axie Monitoring","Mobile and web applicaton where users can track and monitor xtheir axie infinity assets.",null,null,"images/projects/axie-monitoring.png",B.zQ,B.zM)
-B.Ao=A.b(s([B.qJ,B.qK]),t.pN)
-B.rv=new A.eC("Firebase",0.4,"assets/icons/firebase.png","https://firebase.google.com/")
-B.zT=A.b(s([B.d9,B.d8,B.rv]),t.qv)
-B.Dp=new A.ic("Project Manager","This is actually a remake of my first ever flutter app (a todo app). I improved its UI and added more features for this such as email verification, dark mode, google sign in, and more.\nNOTE: EMAIL VERIFICATION PLUGIN IS UNDERMAINTENANCE OTP MIGHT NOT WORK ATM","https://github.com/markcabalona/project-manager","https://markcabalona.github.io/project-manager","images/projects/project-manager.png",B.Ao,B.zT)
-B.kw=A.b(s([B.Dq,B.Dr,B.Dp]),A.U("r<ic>"))
 B.yj=new A.r6(61570,"FontAwesomeBrands","font_awesome_flutter",!1)
 B.xQ=new A.ky(B.yj,null,null,null)
 B.Fj=new A.im("Facebook","https://www.facebook.com/mark.cabalona.8",B.xQ)
@@ -51875,7 +51858,24 @@ B.yl=new A.r6(61586,"FontAwesomeBrands","font_awesome_flutter",!1)
 B.xP=new A.ky(B.yl,null,null,null)
 B.Fh=new A.im("Github","https://github.com/markcabalona",B.xP)
 B.zP=A.b(s([B.Fj,B.Fi,B.Fh]),A.U("r<im>"))
-B.kx=A.b(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
+B.kw=A.b(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
+B.qK=new A.l9("Web","assets/icons/web.png")
+B.zR=A.b(s([B.qK]),t.pN)
+B.d9=new A.eC("Flutter",0.7,"assets/icons/flutter.png","https://flutter.dev/")
+B.d8=new A.eC("Dart",0.7,"assets/icons/dart.png","https://dart.dev/")
+B.rt=new A.eC("Python",0.6,"assets/icons/python.png","https://www.python.org/")
+B.ru=new A.eC("FastAPI",0.5,"assets/icons/fastapi.png","https://fastapi.tiangolo.com/")
+B.Ax=A.b(s([B.d9,B.d8,B.rt,B.ru]),t.qv)
+B.Dr=new A.ic("FreedomWall","A simple web applicaton where anyone can post anything on the wall anonymously.","https://github.com/markcabalona/freedomwall","https://markcabalona.github.io/freedomwall-webapp","assets/images/projects/freedomwall.png",B.zR,B.Ax)
+B.qJ=new A.l9("Android","assets/icons/android.png")
+B.Aa=A.b(s([B.qJ]),t.pN)
+B.zM=A.b(s([B.d9,B.d8]),t.qv)
+B.Dq=new A.ic("Axie Monitoring","Mobile and web applicaton where users can track and monitor xtheir axie infinity assets.",null,null,"assets/images/projects/axie-monitoring.png",B.Aa,B.zM)
+B.Ao=A.b(s([B.qJ,B.qK]),t.pN)
+B.rv=new A.eC("Firebase",0.4,"assets/icons/firebase.png","https://firebase.google.com/")
+B.zT=A.b(s([B.d9,B.d8,B.rv]),t.qv)
+B.Dp=new A.ic("Project Manager","This is actually a remake of my first ever flutter app (a todo app). I improved its UI and added more features such as email verification, dark mode, google sign in, and more.\nNOTE: EMAIL VERIFICATION PLUGIN IS UNDERMAINTENANCE OTP MIGHT NOT WORK ATM","https://github.com/markcabalona/project-manager","https://markcabalona.github.io/project-manager","assets/images/projects/project-manager.png",B.Ao,B.zT)
+B.kx=A.b(s([B.Dr,B.Dq,B.Dp]),A.U("r<ic>"))
 B.AQ=new A.jd("en","US")
 B.ky=A.b(s([B.AQ]),t.as)
 B.j7=new A.pn(0,"named")
@@ -52616,7 +52616,7 @@ B.A1=A.b(s([B.ad,null,null,B.ef]),t.L)
 B.z9=A.b(s([B.aw,null,null,B.eh]),t.L)
 B.zD=A.b(s([B.e5,null,null,B.ee]),t.L)
 B.zH=A.b(s([B.c0,B.c0,B.cW,null]),t.L)
-B.zR=A.b(s([B.aX,null,null,B.e8]),t.L)
+B.zQ=A.b(s([B.aX,null,null,B.e8]),t.L)
 B.A2=A.b(s([B.br,null,null,B.ea]),t.L)
 B.e7=new A.d(8589935117)
 B.Ad=A.b(s([B.cP,null,null,B.e7]),t.L)
@@ -52626,7 +52626,7 @@ B.zI=A.b(s([B.c3,B.c3,B.cZ,null]),t.L)
 B.A4=A.b(s([B.cU,null,null,B.ec]),t.L)
 B.Ap=A.b(s([B.cV,null,null,B.ei]),t.L)
 B.zJ=A.b(s([B.c1,B.c1,B.cX,null]),t.L)
-B.CB=new A.aV(31,{"*":B.zU,"+":B.zV,"-":B.zW,".":B.zX,"/":B.zY,"0":B.AD,"1":B.AE,"2":B.AF,"3":B.AG,"4":B.AH,"5":B.AI,"6":B.AJ,"7":B.AK,"8":B.A5,"9":B.A6,Alt:B.zG,ArrowDown:B.A_,ArrowLeft:B.A0,ArrowRight:B.A1,ArrowUp:B.z9,Clear:B.zD,Control:B.zH,Delete:B.zR,End:B.A2,Enter:B.Ad,Home:B.A3,Insert:B.zE,Meta:B.zI,PageDown:B.A4,PageUp:B.Ap,Shift:B.zJ},B.kv,A.U("aV<q,v<d?>>"))
+B.CB=new A.aV(31,{"*":B.zU,"+":B.zV,"-":B.zW,".":B.zX,"/":B.zY,"0":B.AD,"1":B.AE,"2":B.AF,"3":B.AG,"4":B.AH,"5":B.AI,"6":B.AJ,"7":B.AK,"8":B.A5,"9":B.A6,Alt:B.zG,ArrowDown:B.A_,ArrowLeft:B.A0,ArrowRight:B.A1,ArrowUp:B.z9,Clear:B.zD,Control:B.zH,Delete:B.zQ,End:B.A2,Enter:B.Ad,Home:B.A3,Insert:B.zE,Meta:B.zI,PageDown:B.A4,PageUp:B.Ap,Shift:B.zJ},B.kv,A.U("aV<q,v<d?>>"))
 B.Ar=A.b(s(["mode"]),t.s)
 B.d_=new A.aV(1,{mode:"basic"},B.Ar,t.hD)
 B.zS=A.b(s(["Abort","Again","AltLeft","AltRight","ArrowDown","ArrowLeft","ArrowRight","ArrowUp","AudioVolumeDown","AudioVolumeMute","AudioVolumeUp","Backquote","Backslash","Backspace","BassBoost","BracketLeft","BracketRight","BrightnessAuto","BrightnessDown","BrightnessMaximum","BrightnessMinimum","BrightnessToggle","BrightnessUp","BrowserBack","BrowserFavorites","BrowserForward","BrowserHome","BrowserRefresh","BrowserSearch","BrowserStop","CapsLock","ChannelDown","ChannelUp","Close","ClosedCaptionToggle","Comma","ContextMenu","ControlLeft","ControlRight","Convert","Copy","Cut","Delete","Digit0","Digit1","Digit2","Digit3","Digit4","Digit5","Digit6","Digit7","Digit8","Digit9","DisplayToggleIntExt","Eject","End","Enter","Equal","Escape","Exit","F1","F10","F11","F12","F13","F14","F15","F16","F17","F18","F19","F2","F20","F21","F22","F23","F24","F3","F4","F5","F6","F7","F8","F9","Find","Fn","FnLock","GameButton1","GameButton10","GameButton11","GameButton12","GameButton13","GameButton14","GameButton15","GameButton16","GameButton2","GameButton3","GameButton4","GameButton5","GameButton6","GameButton7","GameButton8","GameButton9","GameButtonA","GameButtonB","GameButtonC","GameButtonLeft1","GameButtonLeft2","GameButtonMode","GameButtonRight1","GameButtonRight2","GameButtonSelect","GameButtonStart","GameButtonThumbLeft","GameButtonThumbRight","GameButtonX","GameButtonY","GameButtonZ","Help","Home","Hyper","Info","Insert","IntlBackslash","IntlRo","IntlYen","KanaMode","KbdIllumDown","KbdIllumUp","KeyA","KeyB","KeyC","KeyD","KeyE","KeyF","KeyG","KeyH","KeyI","KeyJ","KeyK","KeyL","KeyM","KeyN","KeyO","KeyP","KeyQ","KeyR","KeyS","KeyT","KeyU","KeyV","KeyW","KeyX","KeyY","KeyZ","KeyboardLayoutSelect","Lang1","Lang2","Lang3","Lang4","Lang5","LaunchApp1","LaunchApp2","LaunchAssistant","LaunchAudioBrowser","LaunchCalendar","LaunchContacts","LaunchControlPanel","LaunchDocuments","LaunchInternetBrowser","LaunchKeyboardLayout","LaunchMail","LaunchPhone","LaunchScreenSaver","LaunchSpreadsheet","LaunchWordProcessor","LockScreen","LogOff","MailForward","MailReply","MailSend","MediaFastForward","MediaLast","MediaPause","MediaPlay","MediaPlayPause","MediaRecord","MediaRewind","MediaSelect","MediaStop","MediaTrackNext","MediaTrackPrevious","MetaLeft","MetaRight","Minus","New","NonConvert","NumLock","Numpad0","Numpad1","Numpad2","Numpad3","Numpad4","Numpad5","Numpad6","Numpad7","Numpad8","Numpad9","NumpadAdd","NumpadBackspace","NumpadClear","NumpadClearEntry","NumpadComma","NumpadDecimal","NumpadDivide","NumpadEnter","NumpadEqual","NumpadMemoryAdd","NumpadMemoryClear","NumpadMemoryRecall","NumpadMemoryStore","NumpadMemorySubtract","NumpadMultiply","NumpadParenLeft","NumpadParenRight","NumpadSignChange","NumpadSubtract","Open","PageDown","PageUp","Paste","Pause","Period","Power","Print","PrintScreen","PrivacyScreenToggle","ProgramGuide","Props","Quote","Redo","Resume","Save","ScrollLock","Select","SelectTask","Semicolon","ShiftLeft","ShiftRight","ShowAllWindows","Slash","Sleep","Space","SpeechInputToggle","SpellCheck","Super","Suspend","Tab","Turbo","Undo","UsbErrorRollOver","UsbErrorUndefined","UsbPostFail","UsbReserved","WakeUp","ZoomIn","ZoomOut","ZoomToggle"]),t.s)
