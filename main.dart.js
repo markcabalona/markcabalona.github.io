@@ -545,7 +545,7 @@ b2(){var s=window.devicePixelRatio
 return s===0?1:s},
 agj(a){return new A.N9($.a4,a)},
 a3b(){var s,r,q,p,o=window.navigator.languages
-if(o==null||J.eL(o))return B.ky
+if(o==null||J.eL(o))return B.kx
 s=A.b([],t.as)
 for(r=J.au(o);r.t();){q=r.gC(r)
 p=q.split("-")
@@ -30060,7 +30060,7 @@ n=o.e
 o=o.ch
 r=q.gPd()
 q.a.toString
-return new A.uZ(p,p,p,new A.ZE(),p,p,p,p,n,B.CL,p,p,B.Aj,q.gPf(),o,p,B.I4,s,p,r,p,p,B.ky,!1,!1,!1,!1,q.gOY(),!1,p,p,p,!1,new A.j1(q,t.l9))},
+return new A.uZ(p,p,p,new A.ZE(),p,p,p,p,n,B.CL,p,p,B.Aj,q.gPf(),o,p,B.I4,s,p,r,p,p,B.kx,!1,!1,!1,!1,q.gOY(),!1,p,p,p,!1,new A.j1(q,t.l9))},
 H(a,b){var s=null,r=A.NN(!1,!1,this.Lo(b),s,s,s,s,!0,s,s,new A.ZF(),s,s)
 this.a.toString
 return new A.tX(B.ud,new A.kK(A.a(this.d,"_heroController"),r,s),s)}}
@@ -49115,7 +49115,7 @@ A.cH(r.e,q)
 r.e=3
 s=A.a(3,q)>3?3:A.a(r.e,q)
 A.cW(0,s,3)
-s=A.eb(B.kx,0,s,t.tF).dg(0)
+s=A.eb(B.ky,0,s,t.tF).dg(0)
 A.cH(r.d,"visibleProjects")
 r.d=s},
 Pc(){this.ac(new A.a_s(this))},
@@ -49127,7 +49127,7 @@ A.a_s.prototype={
 $0(){var s="visibleProjects",r="projectsCount",q=this.a,p=J.bm(A.a(q.d,s)),o=A.a(q.d,s)
 q=A.a(q.e,r)-p>3?p+3:A.a(q.e,r)
 A.cW(p,q,3)
-J.acw(o,A.eb(B.kx,p,q,t.tF))},
+J.acw(o,A.eb(B.ky,p,q,t.tF))},
 $S:0}
 A.a_t.prototype={
 $1(a){return new A.cT(B.tD,new A.BO(a,null),null)},
@@ -51859,25 +51859,8 @@ B.xP=new A.ky(B.yl,null,null,null)
 B.Fh=new A.im("Github","https://github.com/markcabalona",B.xP)
 B.zP=A.b(s([B.Fj,B.Fi,B.Fh]),A.U("r<im>"))
 B.kw=A.b(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
-B.qK=new A.l9("Web","assets/icons/web.png")
-B.zR=A.b(s([B.qK]),t.pN)
-B.d9=new A.eC("Flutter",0.7,"assets/icons/flutter.png","https://flutter.dev/")
-B.d8=new A.eC("Dart",0.7,"assets/icons/dart.png","https://dart.dev/")
-B.rt=new A.eC("Python",0.6,"assets/icons/python.png","https://www.python.org/")
-B.ru=new A.eC("FastAPI",0.5,"assets/icons/fastapi.png","https://fastapi.tiangolo.com/")
-B.Ax=A.b(s([B.d9,B.d8,B.rt,B.ru]),t.qv)
-B.Dr=new A.ic("FreedomWall","A simple web applicaton where anyone can post anything on the wall anonymously.","https://github.com/markcabalona/freedomwall","https://markcabalona.github.io/freedomwall-webapp","assets/images/projects/freedomwall.png",B.zR,B.Ax)
-B.qJ=new A.l9("Android","assets/icons/android.png")
-B.Aa=A.b(s([B.qJ]),t.pN)
-B.zM=A.b(s([B.d9,B.d8]),t.qv)
-B.Dq=new A.ic("Axie Monitoring","Mobile and web applicaton where users can track and monitor xtheir axie infinity assets.",null,null,"assets/images/projects/axie-monitoring.png",B.Aa,B.zM)
-B.Ao=A.b(s([B.qJ,B.qK]),t.pN)
-B.rv=new A.eC("Firebase",0.4,"assets/icons/firebase.png","https://firebase.google.com/")
-B.zT=A.b(s([B.d9,B.d8,B.rv]),t.qv)
-B.Dp=new A.ic("Project Manager","This is actually a remake of my first ever flutter app (a todo app). I improved its UI and added more features such as email verification, dark mode, google sign in, and more.\nNOTE: EMAIL VERIFICATION PLUGIN IS UNDERMAINTENANCE OTP MIGHT NOT WORK ATM","https://github.com/markcabalona/project-manager","https://markcabalona.github.io/project-manager","assets/images/projects/project-manager.png",B.Ao,B.zT)
-B.kx=A.b(s([B.Dr,B.Dq,B.Dp]),A.U("r<ic>"))
 B.AQ=new A.jd("en","US")
-B.ky=A.b(s([B.AQ]),t.as)
+B.kx=A.b(s([B.AQ]),t.as)
 B.j7=new A.pn(0,"named")
 B.KL=new A.pn(1,"anonymous")
 B.zZ=A.b(s([B.j7,B.KL]),A.U("r<pn>"))
@@ -51887,6 +51870,23 @@ B.A7=A.b(s([B.rx,B.bJ]),A.U("r<or>"))
 B.aO=new A.ou(0,"rtl")
 B.ag=new A.ou(1,"ltr")
 B.A8=A.b(s([B.aO,B.ag]),A.U("r<ou>"))
+B.qK=new A.l9("Web","assets/icons/web.png")
+B.zR=A.b(s([B.qK]),t.pN)
+B.d9=new A.eC("Flutter",0.7,"assets/icons/flutter.png","https://flutter.dev/")
+B.d8=new A.eC("Dart",0.7,"assets/icons/dart.png","https://dart.dev/")
+B.rt=new A.eC("Python",0.6,"assets/icons/python.png","https://www.python.org/")
+B.ru=new A.eC("FastAPI",0.5,"assets/icons/fastapi.png","https://fastapi.tiangolo.com/")
+B.Ax=A.b(s([B.d9,B.d8,B.rt,B.ru]),t.qv)
+B.Dp=new A.ic("FreedomWall","A simple web applicaton where anyone can post anything on the wall anonymously.","https://github.com/markcabalona/freedomwall","https://markcabalona.github.io/freedomwall-webapp","assets/project-images/freedomwall.png",B.zR,B.Ax)
+B.qJ=new A.l9("Android","assets/icons/android.png")
+B.Aa=A.b(s([B.qJ]),t.pN)
+B.zM=A.b(s([B.d9,B.d8]),t.qv)
+B.Dr=new A.ic("Axie Monitoring","Mobile and web applicaton where users can track and monitor xtheir axie infinity assets.",null,null,"assets/project-images/axie-monitoring.png",B.Aa,B.zM)
+B.Ao=A.b(s([B.qJ,B.qK]),t.pN)
+B.rv=new A.eC("Firebase",0.4,"assets/icons/firebase.png","https://firebase.google.com/")
+B.zT=A.b(s([B.d9,B.d8,B.rv]),t.qv)
+B.Dq=new A.ic("Project Manager","This is actually a remake of my first ever flutter app (a todo app). I improved its UI and added more features such as email verification, dark mode, google sign in, and more.\nNOTE: EMAIL VERIFICATION PLUGIN IS UNDERMAINTENANCE OTP MIGHT NOT WORK ATM","https://github.com/markcabalona/project-manager","https://markcabalona.github.io/project-manager","assets/project-images/project-manager.png",B.Ao,B.zT)
+B.ky=A.b(s([B.Dp,B.Dr,B.Dq]),A.U("r<ic>"))
 B.Ae=A.b(s(["click","scroll"]),t.s)
 B.Ag=A.b(s([]),t.fB)
 B.kA=A.b(s([]),t.Y)
